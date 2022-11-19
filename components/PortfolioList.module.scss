@@ -1,0 +1,35 @@
+.grid{
+  display: grid;
+  gap: 60px;
+  figure{
+    display: flex;
+    flex-direction: row-reverse;
+    img{
+      width: 67%;
+    }
+    figcaption{
+      width: 33%;
+      h4{
+        font-size: 24px;
+        margin: 0 0 28px 0;
+      }
+      .tags{
+        span{
+          margin-right: 4px;
+          background-color: #d9d9d9;
+          font-size: 12px;
+          padding: 4px 8px;
+          border-radius: 4px;
+        }
+      }
+      .link{
+        display: block;
+        margin-top: 20px;
+        color: #009861;
+        &:hover{
+          text-decoration: underline;
+        }
+      }
+    }
+  }
+}
