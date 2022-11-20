@@ -1,20 +1,66 @@
-.hero{
+.hero {
   text-align: center;
   padding: 120px 0;
-  p{
+  p {
     color: #7d7d7d;
   }
 }
-.grid{
+.grid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 20px;
-  figure{
+  grid-template-columns: repeat(2, 1fr);
+  gap: 40px;
+  figure {
+    position: relative;
     margin: 0;
-    img{
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background-color: rgba(0, 0, 0, 0.5);
+      opacity: 0;
+      transition: all 0.5s ease;
+    }
+    img {
       width: 100%;
       object-fit: cover;
       aspect-ratio: 1/1;
+      border-radius: 8px;
+    }
+    figcaption {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      width: calc(100% - 80px);
+      padding: 28px;
+      opacity: 0;
+      margin: 12px;
+      background-color: white;
+      border-radius: 8px;
+      transform: translate(-50%, -50%);
+      transition: all 0.5s ease;
+      h3 {
+        margin: 0 0 12px 0;
+        font-weight: bold;
+      }
+      p {
+        margin: 0;
+      }
+      a{
+        margin-top: 12px;
+        display: block;
+        text-align: center;
+      }
+    }
+    &:hover {
+      &::before {
+        opacity: 1;
+      }
+      figcaption {
+        opacity: 1;
+      }
     }
   }
 }

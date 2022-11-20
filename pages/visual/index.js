@@ -1,4 +1,4 @@
-import { Layout } from "components";
+import { Button, Layout } from "components";
 import { useState, useEffect } from "react";
 import styles from "styles/visual.module.scss";
 
@@ -27,6 +27,11 @@ export const Visual = () =>{
             return(
               <figure key={vis.name}>
                 <img src={vis.img} alt={vis.name} />
+                <figcaption>
+                  <h3>{vis.name}</h3>
+                  <p>{vis.desc}</p>
+                  <Button varient="black">View More</Button>
+                </figcaption>
               </figure>
             )
           })}

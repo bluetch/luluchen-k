@@ -3,44 +3,34 @@
 export default function handler(req, res) {
   const visual = [
     {
-      name: "Visual 01",
-      img: "/images/visual/01.jpg",
-      desc: "visual description visual description visual description",
+      name: "Visual project name 01",
+      img: "/images/visual/dribbble_01.webp",
+      desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
     },
     {
-      name: "Visual 02",
-      img: "/images/visual/02.jpg",
-      desc: "visual description visual description visual description",
+      name: "Visual project name 02",
+      img: "/images/visual/dribbble_02.webp",
+      desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
     },
     {
-      name: "Visual 03",
-      img: "/images/visual/03.jpg",
-      desc: "visual description visual description visual description",
+      name: "Visual project name 03",
+      img: "/images/visual/dribbble_03.webp",
+      desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
     },
     {
-      name: "Visual 04",
-      img: "/images/visual/04.jpg",
-      desc: "visual description visual description visual description",
+      name: "Visual project name 04",
+      img: "/images/visual/dribbble_04.webp",
+      desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
     },
     {
-      name: "Visual 05",
-      img: "/images/visual/05.jpg",
-      desc: "visual description visual description visual description",
+      name: "Visual project name 05",
+      img: "/images/visual/dribbble_05.webp",
+      desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
     },
     {
-      name: "Visual 06",
-      img: "/images/visual/06.jpg",
-      desc: "visual description visual description visual description",
-    },
-    {
-      name: "Visual 07",
-      img: "/images/visual/07.jpg",
-      desc: "visual description visual description visual description",
-    },
-    {
-      name: "Visual 08",
-      img: "/images/visual/08.jpg",
-      desc: "visual description visual description visual description",
+      name: "Visual project name 06",
+      img: "/images/visual/dribbble_06.jpg",
+      desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
     },
   ];
   res.status(200).json(visual)
