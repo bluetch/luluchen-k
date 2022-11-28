@@ -19,8 +19,9 @@ export default function Home() {
   return (
     <Layout title="Lulu Chen's Home">
       <div className={styles.hero}>
-        <img src={homeHero.src} alt="lulu" className="w-full" />
-        <p>I am a front-end developer, Visual designer and foody from Tainan, Taiwan.</p>
+        <div className="container">
+          <p>I am a front-end developer, Visual designer and foody from Tainan, Taiwan.</p>
+        </div>
       </div>
       <div className="container">
         <h3 className={styles.h3}>Featured Work</h3>
