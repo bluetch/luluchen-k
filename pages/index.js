@@ -19,7 +19,8 @@ export default function Home() {
   return (
     <Layout title="Lulu Chen's Home">
       <div className={styles.hero}>
-        <div className="container">
+        <div className={styles.mainImg}></div>
+        <div className={`${styles.container} container`}>
           <p>I am a front-end developer, Visual designer and foody from Tainan, Taiwan.</p>
         </div>
       </div>
