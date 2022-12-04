@@ -2,6 +2,7 @@ import Link from "next/link";
 import { useRouter } from "next/router";
 import styles from "./Header.module.scss";
 import logo from "public/images/logo.svg";
+import { useState } from "react";
 
 const LINKS = [
   {
@@ -23,7 +24,11 @@ const LINKS = [
 ];
 
 export const Header = () => {
+  const [open, setOpen] = useState(false);
   const router = useRouter();
+  const show = () => {
+    setOpen(!open);
+  };
   return (
     <header className={styles.header}>
       <div className="container">
@@ -32,19 +37,27 @@ export const Header = () => {
           <Link href="/" className={styles.logo}>
             <img src={logo.src} alt="lulu" />
           </Link>
-          <nav>
+          <nav className={open ? styles.navOpen : styles.nav}>
             {LINKS.map((link) => {
               return (
                 <Link
                   key={link.name}
                   href={link.url}
+                  onClick={show}
                   className={router.asPath === link.url ? styles.linkActive : styles.link}
                 >
                   {link.name}
                 </Link>
               )
             })}
+            <button
+              onClick={show}
+              className={`${open}`}
+            >
+              close
+            </button>
           </nav>
+
         </div>
       </div>
     </header>

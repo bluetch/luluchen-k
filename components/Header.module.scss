@@ -1,24 +1,66 @@
-.header{
-  .logo{
+@import "styles/_mixin.scss";
+
+.header {
+  .logo {
     display: flex;
-    img{
+    img {
       width: 160px;
     }
   }
-  .flex{
+  .flex {
     display: flex;
     justify-content: space-between;
   }
-  .link{
+  .link {
     display: inline-block;
     padding: 26px 16px;
-    &:hover{
-      background-color: rgba(0,0,0,0.02);
+    &:hover {
+      background-color: rgba(0, 0, 0, 0.02);
     }
   }
-  .linkActive{
+  .linkActive {
     @extend .link;
     color: #009861;
     font-weight: bold;
+  }
+}
+
+.navOpen {
+  button{
+    display: none;
+  }
+  @include mobile {
+    position: fixed;
+    top: 0;
+    left: 50%;
+    right: 0;
+    bottom: 0;
+    z-index: 100;
+    background-color: white;
+    padding: 10px;
+    &::before {
+      content: "";
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 50%;
+      bottom: 0;
+      background-color: rgba(0, 0, 0, 0.5);
+    }
+    a.link{
+      display: block;
+      padding: 10px;
+    }
+    button{
+      display: block;
+    }
+  }
+}
+.nav{
+  button{
+    display: none;
+    @include mobile {
+      display: block;
+    }
   }
 }
